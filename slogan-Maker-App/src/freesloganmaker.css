@@ -208,6 +208,7 @@
 .prev__button,
 .next__button {
     cursor: pointer;
+    color: black;
 }
 
 .prev__button img {
@@ -218,5 +219,4 @@
 .prev__button,
 .next__button img {
     cursor: pointer;
-    color: black;
 }
