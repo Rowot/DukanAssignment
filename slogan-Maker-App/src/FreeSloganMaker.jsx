@@ -1,16 +1,19 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { Constants } from './Constants';
+import data from './data'
 import './freesloganmaker.css'
 
 export default function Freesloganmaker() {
     const [sloganData, setSloganData] = useState([]);
-    const [filteredSlogans, setFilteredSlogans] = useState([]);
     const [page, setpage] = useState(1);
+    const [typedInput,setTypedInput] = useState("");
 
     async function fetchSlogans() {
-        const response = await fetch('https://dummyjson.com/quotes?limit=100');
-        const data = await response.json();
+        // const response = await fetch('https://dummyjson.com/quotes?limit=100');
+        // const data = await response.json();
+        // Api data no longer fetched due to rate limiting of api.
+        const response = data;
         setSloganData(data?.quotes)
     }
 
@@ -30,8 +33,8 @@ export default function Freesloganmaker() {
                 <div className='slogan__search'>
                     <div className='slogan__search__heading'>{Constants.sloganSearchHeading}</div>
                     <div className='slogan__search__input'>
-                        <input type='text'></input>
-                        <span>x</span></div>
+                        <input onChange={(e)=>setTypedInput(e.target.value)} value={typedInput} type='text'></input>
+                        {typedInput && <span onClick={()=>setTypedInput("")}>x</span>}</div>
                     <div className='sloganButton'><button>{Constants.sloganButtonText}</button></div>
                 </div>
             </div>

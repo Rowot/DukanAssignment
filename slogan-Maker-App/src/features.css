@@ -10,7 +10,6 @@
     width: 80%;
     display: flex;
     margin: 0 auto;
-    /* flex-wrap: wrap;  */
 }
 
 .feature__search,
@@ -25,19 +24,13 @@
 .feature__select {
     padding: 4rem;
 }
-.feature__select__title, .feature__search__title, .feature__standout__title {
+
+.feature__select__title,
+.feature__search__title,
+.feature__standout__title {
     font-weight: bold;
     margin: 1rem 0rem;
     font-family: 'Galano Grotesque';
     color: #1A181E;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
-
-/* 
-.features__container>div {
-    margin: 0 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-} */

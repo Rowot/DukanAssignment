@@ -19,6 +19,7 @@
 
 .individual__link{
     text-align: left;
+    padding: 0.2rem;
 }
 
 .footer__extra__info{
@@ -40,5 +41,17 @@
 .footer__made__in img {
 
     margin-left: 0.5rem;
+    
+}
+
+
+@media only screen and (max-device-width: 65.5rem) {
+    .footer__link__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 2rem 0;
+        color: white;
+    }
     
 }
