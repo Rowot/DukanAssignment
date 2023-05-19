@@ -15,7 +15,7 @@
     align-items: flex-start;
     justify-content: center;
     text-align: left;
-    padding-left: 2rem;
+    padding: 3rem 8rem;
 }
 
 .freesloganmaker__heading {
@@ -29,12 +29,12 @@
     letter-spacing: -0.04rem;
 
     color: #1A181E;
-    padding: 2.25rem;
 
 }
 
 .freesloganmaker__sub__heading {
-    padding: 2rem;
+    margin: 2rem 0rem;
+    
 }
 
 .slogan__search__heading {
@@ -81,7 +81,7 @@
 }
 
 .slogan__search {
-    padding-left: 3rem;
+    /* padding-left: 3rem; */
 }
 
 .slogan__count {
@@ -89,7 +89,11 @@
     justify-content: space-between;
     align-items: center;
     flex: 1;
-    margin: 2rem;
+    font-family: 'Galano Grotesque';
+    font-weight: bolder;
+    font-size: 20px;
+    color: #1A181E;
+    margin-bottom: 2rem;
 }
 
 .slogan__count button {
@@ -101,18 +105,27 @@
     border: 0.01rem solid #146EB4;
 }
 
+.slogans__section {
+    padding: 3rem 8rem;
+}
+
 .slogans__list {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
+
+/* .slogans__list:nth-child(odd) {
+    margin-right: 1rem;
+} */
 
 .individual__slogan__card {
     cursor: pointer;
     padding: 1rem;
     width: 40%;
     text-align: left;
-    margin: 1rem 0.5rem;
+    margin: 1rem 0rem;
     background-color: #F2F2F2;
     border-radius: 4px;
     overflow: hidden;
@@ -122,7 +135,7 @@
 
 .pagination__section{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     padding-bottom: 1rem;
 }

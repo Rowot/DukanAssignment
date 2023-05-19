@@ -35,11 +35,21 @@ export default function Freesloganmaker() {
                     <div className='sloganButton'><button>{Constants.sloganButtonText}</button></div>
                 </div>
             </div>
-            <hr className='hr_ruler' />
+            <div className='hr_ruler'>
+                <hr />
+            </div>
+
             <section className='slogans__section'>
                 <div className='slogan__count'>{Constants.sloganCountText}
                     <button>{Constants.downloadAllSlogansText}</button></div>
-                <div className="slogans__list">{[...sloganData].slice(page * 10 - 10, page * 10).map((slogan, index) => <div key={slogan.id} className="individual__slogan__card">{slogan?.quote}</div>)}</div>
+                <div className="slogans__list">
+                    {[...sloganData].slice(page * 10 - 10, page * 10)
+                        .map((slogan, index) =>
+                            <div key={slogan.id} className="individual__slogan__card">
+                                {slogan?.quote}
+                            </div>
+                    )}
+                </div>
                 <hr className='hr_ruler' />
                 <div className='pagination__section'>
                     <div><span onClick={() => { page > 1 && pageHandler(page - 1) }} className='prev__button'><img src='./assets/icons/arrow.png' alt="nextButton" />Prev</span></div>
