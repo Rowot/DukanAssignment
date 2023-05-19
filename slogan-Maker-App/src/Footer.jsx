@@ -11,7 +11,7 @@ export default function Footer() {
                     {footerContent?.footerLinks?.map((link, index) => <div className='individual__link' key={index} >{link}</div>)}
                 </div>
             </div>
-            <hr />
+            <hr className='hr_ruler'/>
             <div className='footer__extra__info'>
                 <span>{footerContent.allRightsReserved}</span>
                 <div className='footer__made__in'>

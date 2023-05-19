@@ -4,7 +4,7 @@ import './freeProducts.css';
 
 export default function FreeProducts() {
     return (
-        <div className='freeProducts__container'>
+        <section className='freeProducts__container'>
             <div className='freeProducts__title'>{Constants.freeProductsTitle}</div>
             <div className='freeProducts__section'>
                 <div className='freeProduct__card'>
@@ -28,6 +28,6 @@ export default function FreeProducts() {
                 <div className='freeproductCard__description'>Stock your store with 100s of products and start selling to customers in minutes, without the hassle of inventory or packaging.</div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

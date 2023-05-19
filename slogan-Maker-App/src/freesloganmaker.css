@@ -1,5 +1,5 @@
 .freesloganmaker__main__container {
-    transform: translate(13%, -65%);
+    transform: translate(13%, -10%);
     width: 80%;
     top: 95px;
     background: white;
@@ -7,3 +7,153 @@
     box-shadow: 0px 2px 8px rgba(26, 24, 30, 0.06);
     border-radius: 8px;
 }
+
+.sloganmaker__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    padding-left: 2rem;
+}
+
+.freesloganmaker__heading {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: bolder;
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+    /* identical to box height, or 117% */
+    font-family: 'Galano Grotesque';
+    letter-spacing: -0.04rem;
+
+    color: #1A181E;
+    padding: 2.25rem;
+
+}
+
+.freesloganmaker__sub__heading {
+    padding: 2rem;
+}
+
+.slogan__search__heading {
+    font-size: 1rem;
+}
+
+
+.slogan__search__input {
+    position: relative;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.slogan__search__input input {
+    box-sizing: border-box;
+    border: 0.063rem solid #D9D9D9;
+    border-radius: 0.5rem;
+    height: 2rem;
+    width: 15rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0.5rem 2rem 0.5rem 1rem;
+
+}
+
+.slogan__search__input span {
+    position: absolute;
+    right: 7%;
+    font-size: 116%;
+    top: 3%;
+    cursor: pointer;
+}
+
+.sloganButton button {
+    width: 12.75rem;
+    height: 3.125rem;
+    color: white;
+    background: #146EB4;
+    border-radius: 4px;
+}
+
+.slogan__search {
+    padding-left: 3rem;
+}
+
+.slogan__count {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    margin: 2rem;
+}
+
+.slogan__count button {
+    width: 8.563rem;
+    height: 2.25rem;
+    font-size: small;
+    color: #146EB4;
+    background: white;
+    border: 0.01rem solid #146EB4;
+}
+
+.slogans__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.individual__slogan__card {
+    cursor: pointer;
+    padding: 1rem;
+    width: 40%;
+    text-align: left;
+    margin: 1rem 0.5rem;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.pagination__section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+.pagination__btn__container {
+    display: flex;
+}
+.pagination__buttons{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 1rem;
+    width: 1rem;
+    flex-shrink: 0;
+    border: 0.05px #146EB4;
+    position: relative;
+    padding: 0.5rem;
+    margin: 0.2rem;
+    background-color: #146EB4;
+    color: white;
+    cursor: pointer;
+}
+
+.prev__button,.next__button{
+    cursor: pointer;
+}
+.prev__button img{
+    transform: scaleX(-1);
+    padding-right: 0.2rem;
+}
+.prev__button,.next__button img{
+    cursor: pointer;
+}
+

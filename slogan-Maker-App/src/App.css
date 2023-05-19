@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'Galano Grotesque';
-  src: url('../public/assets/fonts/galanogrotesque-regular.otf') format('truetype'),
-    url('../public/assets/fonts/galanogrotesque-semibold.otf') format('truetype'),
-    url('../public/assets/fonts/galanogrotesque-bold.otf') format('truetype');
+  src: url('/assets/fonts/galanogrotesque-regular.otf') format('truetype'),
+    url('/assets/fonts/galanogrotesque-semibold.otf') format('truetype'),
+    url('/assets/fonts/galanogrotesque-bold.otf') format('truetype');
   /* Add other font formats here if available, e.g., woff, woff2 */
 }
 
@@ -53,4 +53,10 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.hr_ruler{
+  opacity: 0.5;
+  margin: 2rem 0;
+  align-items: center;
 }

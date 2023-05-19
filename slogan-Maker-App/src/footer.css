@@ -7,12 +7,6 @@
 .footer__info{
     display: flex;
     justify-content: space-between;
-    width: 80%;
-}
-
-.footer__logo{
-    
-    
 }
 
 .footer__link__container{
@@ -32,11 +26,13 @@
     justify-content: space-between;
     align-items: center;
     color: white;
+    margin-top: 1.5rem;
 }
 
 .footer__made__in {
 
     display: flex;
+    margin-right: 2rem;
 
 }
 

@@ -2,12 +2,38 @@
     width: 90%;
     margin: 0 auto;
     /* Center the container horizontally */
+    
+    margin-bottom: 5rem;
+}
+
+.freeProducts__title {
+    color: black;
+    text-align: left;
+    font-weight: bolder;
+    font-family: 'Galano Grotesque';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+    /* identical to box height, or 117% */
+
+    letter-spacing: -0.04em;
+
+    /* colors/black/12 */
+
+    color: #1A181E;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
 }
 
 .freeProducts__section {
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+.freeProduct__card img {
+    width: 100%;
 }
 
 @media (max-width: 50rem) {
