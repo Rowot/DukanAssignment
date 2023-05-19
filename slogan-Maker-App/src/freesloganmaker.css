@@ -218,4 +218,5 @@
 .prev__button,
 .next__button img {
     cursor: pointer;
+    color: black;
 }
