@@ -48,15 +48,35 @@ export default function Freesloganmaker() {
                             <div key={slogan.id} className="individual__slogan__card">
                                 {slogan?.quote}
                             </div>
-                    )}
+                        )}
                 </div>
                 <hr className='hr_ruler' />
                 <div className='pagination__section'>
-                    <div><span onClick={() => { page > 1 && pageHandler(page - 1) }} className='prev__button'><img src='./assets/icons/arrow.png' alt="nextButton" />Prev</span></div>
-                    <div className="pagination__btn__container">{[...Array(Math.ceil(sloganData.length / 10))].map((_, index) =>
-                        <span onClick={() => { pageHandler(index + 1) }} className='pagination__buttons' key={index}>{index + 1}</span>)}
+                    <div>
+                    {
+                        page !== 1 &&
+                        <span onClick={() => { page > 1 && pageHandler(page - 1) }} className='prev__button'>
+                            <img src='./assets/icons/arrow.png' alt="nextButton" />Prev
+                        </span>
+                    }
                     </div>
-                    <div><span onClick={() => { page < Math.ceil(sloganData.length / 10) && pageHandler(page + 1) }} className='next__button'>Next<img src='./assets/icons/arrow.png' alt="nextButton" /></span></div>
+
+                    <div className="pagination__btn__container">{[...Array(Math.ceil(sloganData.length / 10))].map((_, index) =>
+                        <span onClick={() => { pageHandler(index + 1) }}
+                            className={page === index + 1 ? 'pagination__buttons_active' : 'pagination__buttons_inactive'}
+                            key={index}>
+                            {index + 1}</span>
+                    )}
+                    </div>
+                    <div>
+                    {
+                        page !== Math.ceil(sloganData.length / 10) &&
+                        <span onClick={() => { page < Math.ceil(sloganData.length / 10) && pageHandler(page + 1) }} className='next__button'>
+                            Next
+                            <img src='./assets/icons/arrow.png' alt="nextButton" />
+                        </span>
+                    }
+                    </div>
                 </div>
             </section>
         </section>

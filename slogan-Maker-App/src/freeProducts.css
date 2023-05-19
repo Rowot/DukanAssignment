@@ -17,7 +17,7 @@
     line-height: 2.625rem;
     /* identical to box height, or 117% */
 
-    letter-spacing: -0.04em;
+    letter-spacing: -0.04rem;
 
     /* colors/black/12 */
 
@@ -30,6 +30,11 @@
     display: grid;
     gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+.freeproductCard__title {
+    color: #1A181E;
+    font-size: 1.25rem;
 }
 
 .freeProduct__card img {
