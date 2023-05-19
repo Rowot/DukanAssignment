@@ -32,6 +32,10 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.freeproductCard__description {
+    color: black;
+}
+
 .freeproductCard__title {
     color: #1A181E;
     font-size: 1.25rem;

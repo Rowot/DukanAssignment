@@ -20,6 +20,11 @@
     padding: 4rem 0rem;
 }
 
+.feature__search__content,
+.feature__select__content,
+.feature__standout__content {
+    color: black;
+}
 
 .feature__select {
     padding: 4rem;
