@@ -78,7 +78,7 @@
     white-space: nowrap;
     padding: 0.5rem 2rem 0.5rem 1rem;
     background: white;
-
+    color: black;
 }
 
 .slogan__search__input span {
@@ -87,6 +87,7 @@
     font-size: 116%;
     top: 3%;
     cursor: pointer;
+    color: black;
 }
 
 .sloganButton button {
