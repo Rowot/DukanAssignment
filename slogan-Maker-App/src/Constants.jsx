@@ -14,3 +14,9 @@ standOutFeature:'Stand out',
 standOutFeatureContent:`Congrats on your new slogan. It's time to win the world!`,
 freeProductsTitle:'Try our other free products',
 };
+
+export const footerContent={
+    footerLinks:['Contact','Tutorial','Privacy','About', 'Facebook',`FAQ's`,'Blog','Banned Items','Jobs','Twitter',' ',' ',' ',' ','Linkedin'],
+    allRightsReserved:'Dukaan 2020, All rights reserved.',
+    madeInIndia:'Made in'
+}

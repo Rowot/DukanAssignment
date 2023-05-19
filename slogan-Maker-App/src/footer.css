@@ -1,0 +1,48 @@
+.footer__container{
+    background-color: #1A181E;
+    text-align: center;
+    padding: 2rem 5rem;
+}
+
+.footer__info{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.footer__logo{
+    
+    
+}
+
+.footer__link__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    color: white;
+}
+
+.individual__link{
+    text-align: left;
+}
+
+.footer__extra__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.footer__made__in {
+
+    display: flex;
+
+}
+
+
+.footer__made__in img {
+
+    margin-left: 0.5rem;
+    
+}

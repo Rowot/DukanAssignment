@@ -1,5 +1,5 @@
 .freesloganmaker__main__container {
-    position: absolute;
+    transform: translate(13%, -65%);
     width: 80%;
     top: 95px;
     background: white;

@@ -7,8 +7,8 @@ export default function Freesloganmaker(){
 
 
 return (
-    <div className='freesloganmaker__main__container'>
-    <section className='sloganmaker__container'>
+    <section className='freesloganmaker__main__container'>
+    <div className='sloganmaker__container'>
         <div className='freesloganmaker__heading'>{Constants.freesloganmakerHeading}</div>
         <div className='freesloganmaker__sub__heading'>{Constants.freesloganmakerSubHeading}</div>
         <div className='slogan__search'>
@@ -16,17 +16,17 @@ return (
         <div className='slogan__search__input'><input type='text'></input><span>x</span></div>
         <div className='sloganButton'><button>{Constants.sloganButtonText}</button></div>
         </div>
-        </section>
+        </div>
         <hr />
         <section className='slogans__section'>
         <div className='slogan__count'>{Constants.sloganCountText}
         <button>{Constants.downloadAllSlogansText}</button>
-        <div className="slogans__list"></div>
+        <div className="slogans__list">sample</div>
         <hr />
-        <div className='pagination__section'></div>
+        <div className='pagination__section'>122345</div>
         </div>
         </section>
-    </div>
+    </section>
 );
 
 }

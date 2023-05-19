@@ -1,0 +1,31 @@
+.freeProducts__container {
+    width: 90%;
+    margin: 0 auto;
+    /* Center the container horizontally */
+}
+
+.freeProducts__section {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 50rem) {
+
+    /* Adjust the breakpoint value as per your design requirements */
+    .freeProducts__section {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 30rem) {
+
+    /* Adjust the breakpoint value as per your design requirements */
+    .freeProducts__section {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,9 +1,16 @@
-.navbar__main__header {
+.navbar__container {
     background-color: #146EB4;
+    display: flex;
+    justify-content: center;
+}
+
+
+.navbar__main__header {
     position: relative;
     display: flex;
-    justify-content: space-around;
-    height: 10.5rem;
+    width: 80%;
+    justify-content: space-between;
+    height: 14.5rem;
 }
 
 .navbar__logo {
@@ -19,6 +26,8 @@
 .navbar__login {
     margin: 0.625rem;
     padding: 0.625rem;
+    padding-right: 0;
+    margin-right: 0;
 }
 
 .navbar__signin {
