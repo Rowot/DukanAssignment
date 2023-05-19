@@ -1,0 +1,41 @@
+.navbar__main__header {
+    background-color: #146EB4;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    height: 10.5rem;
+}
+
+.navbar__logo {
+    width: 9.75rem;
+    height: 2.75rem;
+    padding: 0.625rem;
+    margin: 0.625rem;
+    padding-left: 0;
+    margin-left: 0;
+    cursor: pointer;
+}
+
+.navbar__login {
+    margin: 0.625rem;
+    padding: 0.625rem;
+}
+
+.navbar__signin {
+    cursor: pointer;
+    padding: 0 0.625rem;
+    color: white;
+}
+
+.navbar__pc__download {
+    width: 9.063rem;
+    height: 2rem;
+    padding: 0 0.625rem;
+    background: #FFFFFF;
+    border-radius: 0.25rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: #146EB4;
+}
